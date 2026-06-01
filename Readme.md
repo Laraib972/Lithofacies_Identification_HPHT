@@ -30,17 +30,17 @@ To execute or reproduce this methodology, users must provide their own well log 
 ### 1. Training Tensor Shapes (`main.py`)
 Your training data must be formatted into 3D tensors with the following dimensions:
 
-* **`X_train` (Input Features):** `(Num_Windows, Window_Size, 8)`
+* **`X_train` (Input Features):** `(Num_Windows, Window_Size, No of Input Features)`
   * *Description:* 8 continuous well log curves.
-* **`Y_train` (Target Labels):** `(Num_Windows, Window_Size, 9)`
-  * *Description:* One-hot encoded ground truth for the 9 target lithofacies classes.
+* **`Y_train` (Target Labels):** `(Num_Windows, Window_Size, No of output lables)`
+  * *Description:* One-hot encoded ground truth for the target lithofacies classes.
 * **`X_env` (Environment Constraints):** `(Num_Windows, Window_Size, 1)`
   * *Description:* Categorical integers (0 to 3) mapped directly to the logic conditions defined in `rules.json`.
 
 ### 2. Inference Tensor Shapes (`evaluate.py` & `Analysis/`)
 For predicting or analyzing a continuous blind well, only the patched input features and the original continuous depth length are required.
 
-* **`X_blind` (Input Features):** `(Total_Patches, Window_Size, 8)`
+* **`X_blind` (Input Features):** `(Total_Patches, Window_Size, No of Input Features)`
 * **Evaluation Note:** The inference scripts utilize an overhang clipping logic to reconstruct continuous logs by averaging overlapping patches. Zero-count classes are automatically excluded during evaluation to prevent artificial deflation of the Macro F1-score.
 
 ## 🛠️ Usage Instructions
