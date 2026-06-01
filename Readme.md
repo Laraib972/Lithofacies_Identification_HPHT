@@ -32,7 +32,7 @@ Your training data must be formatted into 3D tensors with the following dimensio
 
 * **`X_train` (Input Features):** `(Num_Windows, Window_Size, No of Input Features)`
   * *Description:* 8 continuous well log curves.
-* **`Y_train` (Target Labels):** `(Num_Windows, Window_Size, No of output lables)`
+* **`Y_train` (Target Labels):** `(Num_Windows, Window_Size, No of output labels)`
   * *Description:* One-hot encoded ground truth for the target lithofacies classes.
 * **`X_env` (Environment Constraints):** `(Num_Windows, Window_Size, 1)`
   * *Description:* Categorical integers (0 to 3) mapped directly to the logic conditions defined in `rules.json`.
