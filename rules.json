@@ -1,0 +1,6 @@
+{
+  "0": { "allowed_facies": ["Marine_Claystone/Shale", "Carbonate", "Marine_Sandstone/Shaly_Sand", "Carb_Shale"] },
+  "1": { "allowed_facies": ["Marine_Claystone/Shale_KT", "Marine_Sandstone/Shaly_Sand",  "Carb_Shale", "Carbonate"] },
+  "2": { "allowed_facies": ["Transitional_Claystone/Shale", "Marine_Sandstone/Shaly_Sand", "Carbonate", "Carb_Shale"] },
+  "3": { "allowed_facies": ["Carb_Shale", "Fluvial_Sandstone", "Fluvial_Shaly_Sand", "Fluvial_Claystone/Shale"] }
+}
