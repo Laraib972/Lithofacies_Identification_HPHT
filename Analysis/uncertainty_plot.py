@@ -134,7 +134,7 @@ def plot_5_track_log(true, pred_std, pred_mcdo, epistemic_unc, total_unc,
     
     plot_filename = f"{model_name}_{well_name.replace(' ', '_')}_Uncertainty_Log.png"
     plt.savefig(plot_filename, dpi=300)
-    print(f"\nSaved 5-track log to {plot_filename}")
+    print(f"\nSaved uncertainty track log to {plot_filename}")
     plt.show()
 
 # ==========================================
