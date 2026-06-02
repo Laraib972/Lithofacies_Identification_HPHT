@@ -201,8 +201,8 @@ def run_confidence_analysis(model, model_name, wells_data, mc_iterations, patch_
 
     # Save Dynamic Output
     # Ensure directory exists
-    os.makedirs('Final_Figures_Paper', exist_ok=True)
-    filename = f'Final_Figures_Paper/Prediction_Confidence_Overall_MCDO_{model_name}.tiff'
+    os.makedirs('Class_Confidence', exist_ok=True)
+    filename = f'Class_Confidence/Prediction_Confidence_Overall_MCDO_{model_name}.tiff'
     plt.savefig(filename, dpi=600, format='tiff', bbox_inches='tight')
     print(f"✅ Plot successfully saved to {filename}")
     plt.show()
