@@ -94,8 +94,8 @@ def plot_comparative_class_uncertainty(models_data, champion_model, output_filen
     plt.grid(False)
 
     # Save Output
-    os.makedirs('Final_Figures_Paper', exist_ok=True)
-    save_path = os.path.join('Final_Figures_Paper', output_filename)
+    os.makedirs('Uncertainty_Classes', exist_ok=True)
+    save_path = os.path.join('Uncertainty_Classes', output_filename)
     plt.savefig(save_path, dpi=600, format='tiff', bbox_inches='tight')
     
     print(f"✅ Comparative plot successfully saved to {save_path}")
