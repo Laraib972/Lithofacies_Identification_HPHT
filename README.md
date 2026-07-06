@@ -88,35 +88,19 @@ Consequently, metrics obtained from the included dummy data are only software-ex
 
 For conventional baseline training, the optimization objective is the data-driven classification loss:
 
-\[
-\mathcal{L}_{\mathrm{base}}
-=
-\mathcal{L}_{\mathrm{focal}}
-\]
+$$\mathcal{L}_{\mathrm{base}} = \mathcal{L}_{\mathrm{focal}}$$
 
 When LTN training is enabled, the total objective becomes:
 
-\[
-\mathcal{L}_{\mathrm{total}}
-=
-\mathcal{L}_{\mathrm{focal}}
-+
-\lambda_{\mathrm{LTN}}
-\mathcal{L}_{\mathrm{LTN}}
-\]
+$$\mathcal{L}_{\mathrm{total}} = \mathcal{L}_{\mathrm{focal}} + \lambda_{\mathrm{LTN}} \mathcal{L}_{\mathrm{LTN}}$$
 
 The LTN component introduces environment-dependent logical constraints. The implemented logical structure penalizes predictions of lithofacies that are disallowed within a specified environment.
 
 Conceptually, the axioms take the form:
 
-\[
-\forall x,\quad
-\mathrm{isZone}_j(x)
-\rightarrow
-\neg \mathrm{isLithofacies}_i(x)
-\]
+$$\forall x, \quad \mathrm{isZone}_j(x) \rightarrow \neg \mathrm{isLithofacies}_i(x)$$
 
-where lithofacies \(i\) is disallowed in environment \(j\).
+where lithofacies $i$ is disallowed in environment $j$.
 
 ### Training and Inference Separation
 
