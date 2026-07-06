@@ -700,7 +700,6 @@ The supplied blind-well dataset is dummy/example data intended only to verify th
 
 For research reproduction, users must use the appropriate trained checkpoint, corresponding research blind-well dataset, consistent patch/reconstruction metadata, and the experiment-specific settings reported in the manuscript.
 
-Additional workflows such as noise-sensitivity testing and class-wise confidence analysis can be documented separately when their interfaces are finalized.
 
 ---
 
