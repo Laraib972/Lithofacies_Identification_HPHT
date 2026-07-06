@@ -473,26 +473,8 @@ Therefore:
 
 - use the included dummy data to verify code execution;
 - use the manuscript for the experimental hyperparameters associated with the published results;
-- do not expect dummy-data metrics to reproduce manuscript results;
-- do not interpret the dummy dataset as a surrogate for the confidential original dataset.
 
 Users adapting the framework to new data should independently tune hyperparameters using an appropriate validation strategy.
-
----
-
-## ANN Baseline
-
-`models.py` also contains an ANN architecture.
-
-At present, the command-line training and evaluation interfaces expose:
-
-```text
-Bi-GRU
-Bi-LSTM
-Res-ASPP-UNet
-```
-
-The ANN class is retained in the model definitions but is not currently connected to the `main.py` and `evaluate.py` command-line choices.
 
 ---
 
