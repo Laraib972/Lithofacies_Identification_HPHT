@@ -654,15 +654,6 @@ Res-ASPP-UNet-LTN:
 python Analysis/uncertainty_plot.py --model Res-ASPP-UNet-LTN --weights "saved_models/Res-ASPP-UNet-LTN_weights.pth" --blind_data "blind_well1_dataset.pt" --passes 100 --dropout 0.1
 ```
 
-### Dummy-Data Limitation for Uncertainty Analysis
-
-The supplied blind-well dataset is dummy/example data intended only to verify that the analysis pipeline executes. Uncertainty magnitudes and track patterns generated from the dummy data must not be interpreted as manuscript results or geological findings.
-
-For research reproduction, users must use the appropriate trained checkpoint, corresponding research blind-well dataset, consistent patch/reconstruction metadata, and the experiment-specific settings reported in the manuscript.
-
-
----
-
 ## Citation
 
 If you use this implementation in academic work, please cite the associated manuscript once its final bibliographic information is available.
