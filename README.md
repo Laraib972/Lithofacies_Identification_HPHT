@@ -561,13 +561,7 @@ Save the uncertainty-track figure
 
 The implemented epistemic uncertainty is:
 
-\[
-U_{\mathrm{epi}}
-=
-H\left[\mathbb{E}_{t}(p_t)\right]
--
-\mathbb{E}_{t}\left[H(p_t)\right]
-\]
+$$U_{\mathrm{epi}} = H\left[\mathbb{E}_{t}(p_t)\right] - \mathbb{E}_{t}\left[H(p_t)\right]$$
 
 where \(p_t\) denotes the predictive probability vector from stochastic forward pass \(t\).
 
