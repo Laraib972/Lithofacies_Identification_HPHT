@@ -563,7 +563,7 @@ The implemented epistemic uncertainty is:
 
 $$U_{\mathrm{epi}} = H\left[\mathbb{E}_{t}(p_t)\right] - \mathbb{E}_{t}\left[H(p_t)\right]$$
 
-where \(p_t\) denotes the predictive probability vector from stochastic forward pass \(t\).
+where $p_t$ denotes the predictive probability vector from stochastic forward pass $t$.
 
 > **Important MCDO requirement:** The selected architecture must contain an actual dropout module in its forward path. The script places the complete model in evaluation mode and then selectively reactivates dropout modules during stochastic inference.
 
