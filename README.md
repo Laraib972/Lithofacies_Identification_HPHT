@@ -164,11 +164,11 @@ It is a PyTorch dictionary containing:
 The included dummy tensors have the following shapes:
 
 ```text
-x_train   : (718, 160, 8)
-y_train   : (718, 160, 9)
-x_val     : (309, 160, 8)
-y_val     : (309, 160, 9)
-env_train : (718, 160, 1)
+x_train   : (143, 160, 8)
+y_train   : (143, 160, 9)
+x_val     : (15, 160, 8)
+y_val     : (15, 160, 9)
+env_train : (143, 160, 1)
 ```
 
 General conventions are:
@@ -203,8 +203,8 @@ It contains patched blind-well inputs and a continuous true-label sequence for t
 The included dummy data use:
 
 ```text
-x_blind : (206, 160, 8)
-y_blind : (32845,)
+x_blind : (41, 160, 8)
+y_blind : (6560,)
 ```
 
 The file also contains reconstruction metadata associated with the dummy patching workflow.
